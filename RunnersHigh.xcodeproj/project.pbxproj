@@ -23,6 +23,9 @@
 		B8387029275C78A50066B402 /* TemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8387028275C78A50066B402 /* TemplateViewController.swift */; };
 		B838702B275C79E60066B402 /* TemplateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B838702A275C79E60066B402 /* TemplateViewModel.swift */; };
 		B838702D275C7AB80066B402 /* TemplateViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B838702C275C7AB80066B402 /* TemplateViewController.storyboard */; };
+		B8387031275C96200066B402 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8387030275C96200066B402 /* UIViewController+Extension.swift */; };
+		B8387037275C99BB0066B402 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8387036275C99BB0066B402 /* R.generated.swift */; };
+		B8387039275C9B590066B402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8387038275C9B590066B402 /* Assets.xcassets */; };
 		F0FF6C4A77371199613A3A08 /* Pods_RunnersHighTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A50738C6D706B3EDCBF58CB /* Pods_RunnersHighTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,9 @@
 		B8387028275C78A50066B402 /* TemplateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewController.swift; sourceTree = "<group>"; };
 		B838702A275C79E60066B402 /* TemplateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateViewModel.swift; sourceTree = "<group>"; };
 		B838702C275C7AB80066B402 /* TemplateViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TemplateViewController.storyboard; sourceTree = "<group>"; };
+		B8387030275C96200066B402 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		B8387036275C99BB0066B402 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		B8387038275C9B590066B402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC3AD4F86A6E618503154ED0 /* Pods-RunnersHighTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnersHighTests.release.xcconfig"; path = "Target Support Files/Pods-RunnersHighTests/Pods-RunnersHighTests.release.xcconfig"; sourceTree = "<group>"; };
 		D02615A7D5B71F4CE38C2003 /* Pods-RunnersHigh-RunnersHighUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnersHigh-RunnersHighUITests.debug.xcconfig"; path = "Target Support Files/Pods-RunnersHigh-RunnersHighUITests/Pods-RunnersHigh-RunnersHighUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E09D6651F6739770536D2DF6 /* Pods-RunnersHigh-RunnersHighUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunnersHigh-RunnersHighUITests.release.xcconfig"; path = "Target Support Files/Pods-RunnersHigh-RunnersHighUITests/Pods-RunnersHigh-RunnersHighUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				B8386FEF275C6F730066B402 /* RunnersHigh */,
+				B838702E275C95E50066B402 /* Common */,
 				B8387006275C6F770066B402 /* RunnersHighTests */,
 				B8387010275C6F770066B402 /* RunnersHighUITests */,
 				B8386FEE275C6F730066B402 /* Products */,
@@ -149,16 +156,17 @@
 		B8386FEF275C6F730066B402 /* RunnersHigh */ = {
 			isa = PBXGroup;
 			children = (
-				B8387023275C77230066B402 /* Template */,
-				B8387022275C77140066B402 /* Support */,
-				B8387021275C770D0066B402 /* Resource */,
-				B8387020275C76FD0066B402 /* Presentation */,
 				B8386FF0275C6F730066B402 /* AppDelegate.swift */,
 				B8386FF2275C6F730066B402 /* SceneDelegate.swift */,
 				B8386FF4275C6F730066B402 /* ViewController.swift */,
 				B8386FF6275C6F730066B402 /* Main.storyboard */,
 				B8386FFB275C6F770066B402 /* LaunchScreen.storyboard */,
 				B8386FFE275C6F770066B402 /* Info.plist */,
+				B8387020275C76FD0066B402 /* Presentation */,
+				B8387023275C77230066B402 /* Template */,
+				B8387021275C770D0066B402 /* Resource */,
+				B8387022275C77140066B402 /* Support */,
+				B8387032275C96FB0066B402 /* RSwift */,
 			);
 			path = RunnersHigh;
 			sourceTree = "<group>";
@@ -190,6 +198,8 @@
 		B8387021275C770D0066B402 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				B8386FF9275C6F770066B402 /* Color.xcassets */,
+				B8387024275C776A0066B402 /* Image.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -197,8 +207,7 @@
 		B8387022275C77140066B402 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				B8386FF9275C6F770066B402 /* Color.xcassets */,
-				B8387024275C776A0066B402 /* Image.xcassets */,
+				B8387038275C9B590066B402 /* Assets.xcassets */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -214,6 +223,30 @@
 			path = Template;
 			sourceTree = "<group>";
 		};
+		B838702E275C95E50066B402 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B838702F275C95FD0066B402 /* Extension */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B838702F275C95FD0066B402 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B8387030275C96200066B402 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B8387032275C96FB0066B402 /* RSwift */ = {
+			isa = PBXGroup;
+			children = (
+				B8387036275C99BB0066B402 /* R.generated.swift */,
+			);
+			path = RSwift;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,6 +255,7 @@
 			buildConfigurationList = B8387017275C6F770066B402 /* Build configuration list for PBXNativeTarget "RunnersHigh" */;
 			buildPhases = (
 				C30F09D6DE623FD6ADC6B809 /* [CP] Check Pods Manifest.lock */,
+				B8387033275C97710066B402 /* RSwift */,
 				B8386FE9275C6F730066B402 /* Sources */,
 				B8386FEA275C6F730066B402 /* Frameworks */,
 				B8386FEB275C6F730066B402 /* Resources */,
@@ -327,6 +361,7 @@
 				B8387025275C776A0066B402 /* Image.xcassets in Resources */,
 				B838702D275C7AB80066B402 /* TemplateViewController.storyboard in Resources */,
 				B8386FFA275C6F770066B402 /* Color.xcassets in Resources */,
+				B8387039275C9B590066B402 /* Assets.xcassets in Resources */,
 				B8386FF8275C6F730066B402 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +461,26 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RunnersHigh/Pods-RunnersHigh-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B8387033275C97710066B402 /* RSwift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = RSwift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/RunnersHigh/RSwift/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/RunnersHigh/RSwift/R.generated.swift\"\n";
+		};
 		C30F09D6DE623FD6ADC6B809 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -458,7 +513,9 @@
 				B8387027275C77A00066B402 /* TemplateRouter.swift in Sources */,
 				B8387029275C78A50066B402 /* TemplateViewController.swift in Sources */,
 				B8386FF5275C6F730066B402 /* ViewController.swift in Sources */,
+				B8387037275C99BB0066B402 /* R.generated.swift in Sources */,
 				B8386FF1275C6F730066B402 /* AppDelegate.swift in Sources */,
+				B8387031275C96200066B402 /* UIViewController+Extension.swift in Sources */,
 				B838702B275C79E60066B402 /* TemplateViewModel.swift in Sources */,
 				B8386FF3275C6F730066B402 /* SceneDelegate.swift in Sources */,
 			);
