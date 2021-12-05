@@ -14,7 +14,6 @@ final class TemplateViewController: UIViewController {
         let creator: Creator = {
             TemplateViewController(coder: $0, viewModel: viewModel)
         }
-        // test
         guard let vc = R.storyboard.templateViewController()
                 .instantiateInitialViewController(creator: creator) as? Self else {
             preconditionFailure("TemplateViewController cannot instantiate")
