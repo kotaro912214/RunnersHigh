@@ -1,5 +1,15 @@
 .DS_Store
 
-/* Xcode */
+## Xcode
 *.xcuserstate
 *.xcbkptlist
+RunnersHigh.xcodeproj/project.xcworkspace/
+RunnersHigh.xcodeproj/xcuserdata/
+RunnersHigh.xcworkspace
+Pods/
+
+## ruby
+bundle/
+bundler/
+.bundle
+vendor/
