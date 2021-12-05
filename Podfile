@@ -14,11 +14,10 @@ target 'RunnersHigh' do
     inherit! :search_paths
     # Pods for testing
   end
+end
 
-  target 'RunnersHighUITests' do
-    # Pods for testing
-  end
-
+target 'Map' do
+  pod 'R.swift', '5.2.2'
 end
 
 post_install do |installer|

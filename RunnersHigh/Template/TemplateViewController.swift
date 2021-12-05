@@ -4,6 +4,7 @@
 //
 //  Created by kotaro-seki on 2021/12/05.
 //
+import Common
 
 import Foundation
 import UIKit
