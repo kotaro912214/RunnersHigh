@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 
 final class TemplateViewController: UIViewController {
+    // router -> weak ViewController -> viewModel & viewOperator -> router
+    //        -> weak viewOperator
     static func instantiate(router: TemplateRouter) -> Self {
         let viewModel = TemplateViewModel(router: router)
         let creator: Creator = {

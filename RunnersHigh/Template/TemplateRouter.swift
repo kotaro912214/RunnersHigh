@@ -15,9 +15,9 @@ protocol TemplateRouterInterface: AnyObject {}
 final class TemplateRouter {
     static func instantiate() -> TemplateRouter {
         let router = TemplateRouter()
-//        let vc = TemplateViewController.instantiate(router: router)
-//        router.viewController = vc
-//        router.viewOperator = vc.viewOperator
+        let vc = TemplateViewController.instantiate(router: router)
+        router.viewController = vc
+        router.viewOperator = vc.viewOperator
         return router
     }
 

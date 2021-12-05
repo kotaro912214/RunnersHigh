@@ -161,7 +161,6 @@
 				B8386FF4275C6F730066B402 /* ViewController.swift */,
 				B8386FF6275C6F730066B402 /* Main.storyboard */,
 				B8386FFB275C6F770066B402 /* LaunchScreen.storyboard */,
-				B8386FFE275C6F770066B402 /* Info.plist */,
 				B8387020275C76FD0066B402 /* Presentation */,
 				B8387023275C77230066B402 /* Template */,
 				B8387021275C770D0066B402 /* Resource */,
@@ -191,6 +190,7 @@
 		B8387020275C76FD0066B402 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				B838703A275CBEAE0066B402 /* Root */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -208,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				B8387038275C9B590066B402 /* Assets.xcassets */,
+				B8386FFE275C6F770066B402 /* Info.plist */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -245,6 +246,13 @@
 				B8387036275C99BB0066B402 /* R.generated.swift */,
 			);
 			path = RSwift;
+			sourceTree = "<group>";
+		};
+		B838703A275CBEAE0066B402 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -699,7 +707,7 @@
 				CURRENT_PROJECT_VERSION = 0.0.0;
 				DEVELOPMENT_TEAM = 3YL7JSN5AR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RunnersHigh/Info.plist;
+				INFOPLIST_FILE = RunnersHigh/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -729,7 +737,7 @@
 				CURRENT_PROJECT_VERSION = 0.0.0;
 				DEVELOPMENT_TEAM = 3YL7JSN5AR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RunnersHigh/Info.plist;
+				INFOPLIST_FILE = RunnersHigh/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
